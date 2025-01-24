@@ -18,7 +18,7 @@ def start_sniffing(interface=None, packet_filter=None, output_file="captured_pac
         """
         Processes a single captured packet. Analyzes, logs, and writes it to the PCAP file.
         """
-        print(packet.summury())
+        print(packet.summary())
         # Analyze and log the packet (if needed)
         analyze_packet(packet)
         save_log(packet)
